@@ -20,6 +20,9 @@
 		BBC940822895D5B300502C80 /* StartTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC940812895D5B300502C80 /* StartTab.swift */; };
 		BBC940842895D8D400502C80 /* ReallyLargeContentSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC940832895D8D400502C80 /* ReallyLargeContentSheet.swift */; };
 		BBC940A12895EC9B00502C80 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBC940A02895EC9B00502C80 /* Launch Screen.storyboard */; };
+		E46C99CB28FBD926001DB27E /* SheetModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46C99CA28FBD926001DB27E /* SheetModifiers.swift */; };
+		E46C99CF28FBE5A3001DB27E /* TinyDetent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E46C99CE28FBE5A3001DB27E /* TinyDetent.swift */; };
+		E472F26B28FC9C5E00663FAE /* ModalSheetType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E472F26A28FC9C5E00663FAE /* ModalSheetType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,9 @@
 		BBC940812895D5B300502C80 /* StartTab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartTab.swift; sourceTree = "<group>"; };
 		BBC940832895D8D400502C80 /* ReallyLargeContentSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReallyLargeContentSheet.swift; sourceTree = "<group>"; };
 		BBC940A02895EC9B00502C80 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		E46C99CA28FBD926001DB27E /* SheetModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetModifiers.swift; sourceTree = "<group>"; };
+		E46C99CE28FBE5A3001DB27E /* TinyDetent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinyDetent.swift; sourceTree = "<group>"; };
+		E472F26A28FC9C5E00663FAE /* ModalSheetType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalSheetType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,9 +78,12 @@
 				BBA6C4B7288EF68F000A88C9 /* AppEntry.swift */,
 				BBC940812895D5B300502C80 /* StartTab.swift */,
 				BB7D98C028943981004AF06A /* Basics.swift */,
+				E46C99CA28FBD926001DB27E /* SheetModifiers.swift */,
 				BBA6C4C5288EF838000A88C9 /* FractionAndHeight.swift */,
 				BB4FAB1628949539004FACDD /* MultiSheetView.swift */,
+				E472F26A28FC9C5E00663FAE /* ModalSheetType.swift */,
 				BBA6C4C7288EF894000A88C9 /* CustomDetent.swift */,
+				E46C99CE28FBE5A3001DB27E /* TinyDetent.swift */,
 				BBC940852895DC0600502C80 /* SampleSheetViews */,
 				BBA6C4BB288EF692000A88C9 /* Assets.xcassets */,
 				BBC940A02895EC9B00502C80 /* Launch Screen.storyboard */,
@@ -175,12 +184,15 @@
 			files = (
 				BB7D98C128943981004AF06A /* Basics.swift in Sources */,
 				BBA6C4C8288EF894000A88C9 /* CustomDetent.swift in Sources */,
+				E472F26B28FC9C5E00663FAE /* ModalSheetType.swift in Sources */,
 				BBA6C4C6288EF838000A88C9 /* FractionAndHeight.swift in Sources */,
 				BB4FAB1128949343004FACDD /* LargeContentSheet.swift in Sources */,
 				BBC940822895D5B300502C80 /* StartTab.swift in Sources */,
 				BBC940842895D8D400502C80 /* ReallyLargeContentSheet.swift in Sources */,
 				BB7D98C328943B57004AF06A /* MediumContentSheet.swift in Sources */,
+				E46C99CB28FBD926001DB27E /* SheetModifiers.swift in Sources */,
 				BBC9407E2895B28100502C80 /* TinyContentSheet.swift in Sources */,
+				E46C99CF28FBE5A3001DB27E /* TinyDetent.swift in Sources */,
 				BB4FAB172894953A004FACDD /* MultiSheetView.swift in Sources */,
 				BBA6C4B8288EF68F000A88C9 /* AppEntry.swift in Sources */,
 			);

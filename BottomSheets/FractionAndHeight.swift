@@ -10,18 +10,27 @@
 import SwiftUI
 
 struct FractionAndHeight: View {
-    
+    @State private var showSheet = false
     var body: some View {
         NavigationStack {
             VStack {
                 Button("Show Sheet") {
-                    
+                    showSheet.toggle()
                 }
                 .padding()
                 .buttonStyle(.borderedProminent)
                 Spacer()
             }
             .navigationTitle("Fraction and Height")
+            .sheet(isPresented: $showSheet) {
+                LargeContentSheet()
+                    .withDismissButton()
+                    .presentationDetents([
+                        .fraction(0.2),
+                        .height(600),
+                        .large
+                    ])
+            }
         }
     }
 }

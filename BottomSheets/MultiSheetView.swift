@@ -10,18 +10,18 @@
 import SwiftUI
 
 struct MultiSheetView: View {
-    
+    @State private var modalSheetType: ModalSheetType?
     var body: some View {
         NavigationStack {
             VStack {
                 HStack {
                     Button {
-                       
+                        modalSheetType = .medium
                     } label: {
                         Text("Medium Sheet")
                     }
                     Button {
-                       
+                        modalSheetType = .large
                     } label: {
                         Text("Large Sheet")
                     }
@@ -30,6 +30,15 @@ struct MultiSheetView: View {
                 Spacer()
             }
             .navigationTitle("Bottom Sheet")
+            .sheet(item: $modalSheetType) { sheet in
+                sheet
+                    .withDismissButton()
+                    .presentationDetents(
+                        sheet == .medium
+                        ? [.medium]
+                        : [.medium, .large]
+                    )
+            }
         }
     }
 }

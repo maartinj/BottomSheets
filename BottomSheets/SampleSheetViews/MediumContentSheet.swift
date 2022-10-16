@@ -12,11 +12,11 @@ import SwiftUI
 struct MediumContentSheet: View {
     var body: some View {
             VStack(spacing: 10) {
-                Text("Medium Content")
-                    .font(.largeTitle)
-                Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed odio morbi quis commodo odio aenean sed adipiscing./n/nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Nunc sed augue lacus viverra vitae congue. Quis blandit turpis cursus in hac habitasse. Est ante in nibh mauris cursus mattis. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Nulla pellentesque dignissim enim sit.")
-                Spacer()
-            }
+                    Text("Medium Content")
+                        .font(.largeTitle)
+                    Text("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sed odio morbi quis commodo odio aenean sed adipiscing./n/nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisi quis eleifend quam adipiscing vitae proin sagittis nisl. Nunc sed augue lacus viverra vitae congue. Quis blandit turpis cursus in hac habitasse. Est ante in nibh mauris cursus mattis. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Nulla pellentesque dignissim enim sit.")
+                    Spacer()
+                }
             .padding()
     }
 }

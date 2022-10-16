@@ -10,17 +10,23 @@
 import SwiftUI
 
 struct Basics: View {
+    @State private var showSheet = false
     var body: some View {
         NavigationStack {
             VStack {
                 Button("Show Sheet") {
-                    
+                    showSheet.toggle()
                 }
                 .padding()
                 .buttonStyle(.borderedProminent)
                 Spacer()
             }
             .navigationTitle("The Basics")
+            .sheet(isPresented: $showSheet) {
+                ReallyLargeContentSheet()
+                    .withDismissButton(withScroll: true)
+                    .presentationDetents([.medium, .large])
+            }
         }
     }
 }
